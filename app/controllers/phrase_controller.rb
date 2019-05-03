@@ -34,7 +34,7 @@ class PhraseController < ApplicationController
 	  	end
   end
 	def create5b
-	phrase = Phrase5b.create(phrase: params[:phrase5b])
+	@phrase = Phrase5b.create(phrase: params[:phrase5b])
 	  	if @phrase.save
 	  		redirect_to "/new", notice: "下の句に「#{@phrase.phrase}」を登録しました。"
 	 	else
