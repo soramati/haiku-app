@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_03_014417) do
+ActiveRecord::Schema.define(version: 2019_05_03_040005) do
+
+  create_table "phrase5bs", force: :cascade do |t|
+    t.string "phrase"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "phrase5s", force: :cascade do |t|
     t.string "phrase", limit: 5
