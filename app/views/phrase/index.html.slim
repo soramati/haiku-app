@@ -1,7 +1,19 @@
-.row
+.index
 	.phrase_box
 		p.phrease=@phrase5b.phrase 
 		p.phrease=@phrase7.phrase 
 		p.phrease =@phrase5_a.phrase 
-	.mb-3= link_to'HAIKU', '/' ,class: "btn btn-primary"
-= render partial: 'form',locals: {task: @task}
+	.haiku_btn= link_to'HAIKU!', '/' 
+	=image_tag("rabbit.png")
+.new
+	.row
+		.description
+	        h2="HAIKUに参加できます"
+	        p="HAIKUは集めた単語をバラしてつなげる"
+	        p="俳句ジェネレーターです。"
+		.form
+			.form_box
+				= render partial: 'form'
+		.attention
+			p="ひらがな、カタカナ、漢字に対応しています。"
+			p="句読点は入れないでください。"

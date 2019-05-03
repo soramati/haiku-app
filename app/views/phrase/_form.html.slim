@@ -1,19 +1,20 @@
 = form_with model: @phrase5, url:'/create/phrase5',local: true do |f|
   .form-group
-    = f.label :phrase5
+    = f.label :phrase5,'KAMINOKU'
     = f.text_field :phrase5, class: 'form-control', id: 'phrase5'
-  = f.submit 'Create!', class: 'btn btn-primary'
+  = f.submit 'HAIKU!', class: 'haiku_btn_submit'
 
 = form_with model: @phrase7, url:'/create/phrase7',local: true do |f|
   .form-group
-    = f.label :phrase7
+    = f.label :phrase7,'NAKANOKU'
     = f.text_field :phrase7, class: 'form-control', id: 'phrase7'
-  = f.submit 'Create!', class: 'btn btn-primary'
+  = f.submit 'HAIKU!', class: 'haiku_btn_submit'
+
 
 = form_with model: @phrase5b, url:'/create/phrase5b',local: true do |f|
   .form-group
-    = f.label :phrase5b
+    = f.label :phrase5b,'SIMONOKU'
     = f.text_field :phrase5b, class: 'form-control', id: 'phrase5b'
-  = f.submit 'Create!', class: 'btn btn-primary'
+  = f.submit 'HAIKU!', class: 'haiku_btn_submit'
 
 

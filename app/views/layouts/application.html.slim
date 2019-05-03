@@ -1,23 +1,20 @@
 doctype html
 html
   head
+  
     title
-      | Taskleaf
+      | HAIKU
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
   body
 
-  .app-title.navbar.navbar--expand-md.navbar-light.bg-light
-  	.navbar-brand HaikuEX
-
-    ul.navbar-nav.ml-auto
-        li.nav-item= link_to 'TOP', "/",class: 'nav-link'
-        li.nav-item= link_to 'Newdete', "/new",class: 'nav-link'
   .container
+    .navbar-brand HAIKU
 
     -if flash.notice.present?
-      .alert.alert-success= flash.notice
+      .alert= flash.notice
     p
     = yield

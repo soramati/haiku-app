@@ -1,12 +1,114 @@
 @import "bootstrap";
+body{
+    background-image: image-url("background.png") ;//=> url(/assets/naoty.png)
+    background-size: cover;
+	font-family: kozuka-gothic-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.haiku_btn{
+		margin:0 auto;
+		border: solid 3px #1E1E1E;
+		width:149px;
+		height:52px;
+		display: flex;
+		justify-content: center;
+		background-color: rgba(10, 10, 10, 0.0);
+			a{
+			color:#1E1E1E;
+			text-align: center;
+			font-size:31px;
+			}
+}
+.navbar-brand{
+	font-size:31px;
+	margin-top: 13px;
+}
+p{
+	font-size:15px;
+}
+img{
 
-// .row{
-// 	margin: 0 auto;		
-// 	height: 800px;
-// 	width: 80%;
-// 	.phrease{
-// 	  -ms-writing-mode: tb-rl;
-// 	  writing-mode: vertical-rl;
-// 	  padding: 30px;
-// 	}
-// }
+	position: absolute;
+	right: 100px;
+	top: 300px;
+}
+
+.index{
+		height: 80vh;
+		width: 289px;
+		margin:100px auto;
+		.phrase_box{
+			width:286px;
+			height:341px;
+			display: flex;
+			justify-content:space-between;
+			margin-left: -12px;
+			.phrease{
+			  -ms-writing-mode: tb-rl;
+			  writing-mode: vertical-rl;
+			  font-size: 31px;
+
+			}
+		}
+		
+	}
+
+
+.new{
+	height:100vh;
+	padding-top: 50px;
+	.row{
+		display: flex;
+		justify-content: space-between;
+		.description{
+			margin-top: -121px;
+		}
+		.form{
+			form{
+				width:300px;
+			}
+			.haiku_btn_submit{
+		margin-left:  209px;
+		border: solid 3px #1E1E1E;
+		width:90px;
+		height:35px;
+		display: flex;
+		background-color: rgba(10, 10, 10, 0.0);
+			color:#1E1E1E;
+			text-align: center;
+			font-size:19px;
+			}
+		}
+		.haiku_btn_submit:hover{
+			opacify:0.5;
+			}
+		.attention{
+			margin-top: 70px;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.new{
+
+			width:100%;
+
+		.row{
+			margin:0 auto;
+			width:100%;
+			display:flex;
+			justify-content: center;
+		.form{
+			display:flex;
+			justify-content: start;
+			width:100%;
+			max-width:300px;
+			margin-left: -26px;
+			form{
+			}
+
+		}
+	}
+}
+}
