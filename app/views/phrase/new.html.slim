@@ -1,20 +1,4 @@
 h1 Add Haiku date
-= form_with model: @phrase5, url:'/create/phrase5',local: true do |f|
-  .form-group
-    = f.label :phrase5
-    = f.text_field :phrase5, class: 'form-control', id: 'phrase5'
-  = f.submit 'Create!', class: 'btn btn-primary'
-
-= form_with model: @phrase7, url:'/create/phrase7',local: true do |f|
-  .form-group
-    = f.label :phrase7
-    = f.text_field :phrase7, class: 'form-control', id: 'phrase7'
-  = f.submit 'Create!', class: 'btn btn-primary'
-
-= form_with model: @phrase5b, url:'/create/phrase5b',local: true do |f|
-  .form-group
-    = f.label :phrase5b
-    = f.text_field :phrase5b, class: 'form-control', id: 'phrase5b'
-  = f.submit 'Create!', class: 'btn btn-primary'
+= render partial: 'form',locals: {task: @task}
 
 
