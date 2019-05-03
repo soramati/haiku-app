@@ -14,11 +14,16 @@ class PhraseController < ApplicationController
   	# 作成画面へ
   end
 
-  def create
-  	# 新しいPhraseを追加
-  	phrase7 = phrase7.new(phrase: params[:phrase7])
-  	phrase7.save
-  	phrase5 = phrase5.new(phrase: params[:phrase5])
-  	phrase5.save
+  def create5
+	  	phrase5 = Phrase5.create(phrase: params[:phrase5])
+	  	if phrase5.save
+	     redirect_to '/'
+	 end
+  end
+  def create7
+  	phrase7 = Phrase7.create(phrase: params[:phrase7])
+  	if phrase7.save
+  	 redirect_to '/'
+  	end
   end
 end

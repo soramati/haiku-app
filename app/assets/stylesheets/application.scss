@@ -1,1 +1,12 @@
 @import "bootstrap";
+
+.row{
+	margin: 0 auto;		
+	height: 800px;
+	width: 80%;
+	.phrease{
+	  -ms-writing-mode: tb-rl;
+	  writing-mode: vertical-rl;
+	  padding: 30px;
+	}
+}

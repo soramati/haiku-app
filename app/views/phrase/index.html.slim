@@ -1,12 +1,8 @@
 h1 Haiku
 p
-= link_to'Create', '/' ,class: "btn btn-primary"
 
-.mb-3
-table.table.table-hover
-	thead.thead-default
-	tbody
-	 	tr
-	 	  td= @phrase5_a.phrase
-	 	  td= @phrase7.phrase
-	 	  td= @phrase5_b.phrase
+.row
+	 	  p.phrease =@phrase5_a.phrase 
+	 	  p.phrease=@phrase7.phrase 
+	 	  p.phrease=@phrase5_b.phrase 
+.mb-3= link_to'Create', '/' ,class: "btn btn-primary"
