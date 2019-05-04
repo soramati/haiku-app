@@ -7,6 +7,19 @@ body{
     font-style: normal;
 }
 
+.tweet_btn:hover{
+  background-color: #fff;
+  color:#1E1E1E;
+}
+.tweet_btn{
+	position:fixed;
+	bottom: 30px;
+	right:30px;
+	color:#fff;
+	background-color: #1E1E1E;
+	border: solid 3px #1E1E1E;
+	padding:3px 10px;
+}
 .title{
 	margin-top:19px;
 	width:170px;
@@ -120,6 +133,9 @@ img{
 }
 
 @media (max-width:980px) { 
+	.main_content{
+		margin-top:136px;
+	}
 .title{
 	width:70%;
 	margin:0 auto;
@@ -161,7 +177,7 @@ img{
 				display: flex;
 				justify-content:space-between;
 				margin-left: -12px;
-				margin-top:267px;
+				margin-top:-33px;
 				.phrease{
 				  -ms-writing-mode: tb-rl;
 				  writing-mode: vertical-rl;

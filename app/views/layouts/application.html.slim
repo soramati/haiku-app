@@ -1,7 +1,12 @@
 doctype html
 html
   head
-  
+  <meta name="twitter:card" content="Summary" /> 
+  / <meta name="twitter:site" content="@ユーザー名" /> /*②*/
+  <meta property="og:url" content="https://haiku-sora.herokuapp.com/" /> 
+  <meta property="og:title" content="みんなでHAIKUを作ろう！" /> 
+  <meta property="og:description" content="みんなのコトバを集めて、HAIKUを生み出すジェネレーター。" /> 
+  <meta property="og:image" content="thumbnail.jpg" />
     title
       | HAIKU
     = csrf_meta_tags
