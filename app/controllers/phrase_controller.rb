@@ -15,31 +15,19 @@ class PhraseController < ApplicationController
   	# 作成画面へ
   end
 
-  def create5
-	  	@phrase = Phrase5.create(phrase: params[:phrase5])
+  def create
 
-	  	if @phrase.save
-	  		redirect_to "/", notice: "上の句に「#{@phrase.phrase}」を登録しました。"
+	  	
+	  	if @phrase5 = Phrase5.create(phrase: params[:phrase5]).save
+	  		redirect_to "/", notice: "上の句を登録しました。"
+    	elsif @phrase7 = Phrase7.create(phrase: params[:phrase7]).save
+	  		redirect_to "/", notice: "中の句を登録しました。"
+		elsif  @phrase5b = Phrase5b.create(phrase: params[:phrase5b]).save
+	  		redirect_to "/", notice: "下の句を登録しました。"
 	 	else
-	  		redirect_to "/", notice: "「#{@phrase.phrase}」に使用できない文字が含まれているか、既に登録されています。"
+	  		redirect_to "/", notice: "使用できない文字が含まれているか、既に登録されています。"
 	  	end
 
-	 end
-  def create7
-  	@phrase = Phrase7.create(phrase: params[:phrase7])
-	  	if @phrase.save
-	  		redirect_to "/", notice: "中の句に「#{@phrase.phrase}」を登録しました。"
-	 	else
-	  		redirect_to "/", notice: "「#{@phrase.phrase}」に使用できない文字が含まれているか、既に登録されています。"
-	  	end
-  end
-	def create5b
-	@phrase = Phrase5b.create(phrase: params[:phrase5b])
-	  	if @phrase.save
-	  		redirect_to "/", notice: "下の句に「#{@phrase.phrase}」を登録しました。"
-	 	else
-	  		redirect_to "/", notice: "「#{@phrase.phrase}」に使用できない文字が含まれているか、既に登録されています。"
-	  	end
-  end
+	end
 
 end

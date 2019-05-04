@@ -11,10 +11,9 @@ html
 
   body
 
-  .container
-    .navbar-brand HAIKU
-
-    -if flash.notice.present?
-      .alert= flash.notice
-    p
-    = yield
+.container
+  .title
+    h1="HAIKU"
+  -if flash.notice.present?
+    .alert= flash.notice
+  = yield
