@@ -6,12 +6,14 @@ body{
     font-weight: 700;
     font-style: normal;
 }
-.title{
-	margin-top:55px;
-	width:143px;
-	h1{
-	border: solid 3px #1E1E1E;
 
+.title{
+	margin-top:19px;
+	width:170px;
+	h1{
+		padding:10px 28px;
+		border: solid 3px #1E1E1E;
+		font-size:28px;
 	}
 }
 h1{
@@ -68,14 +70,14 @@ img{
 		margin:100px auto;
 		.phrase_box{
 			width:286px;
-			height:341px;
+			min-height: 341px;
 			display: flex;
-			justify-content:space-between;
+			justify-content:center;
 			margin-left: -12px;
 			.phrease{
 			  -ms-writing-mode: tb-rl;
 			  writing-mode: vertical-rl;
-			  font-size: 31px;
+			  font-size: 44px;
 
 			}
 		}
@@ -116,15 +118,14 @@ img{
 		}
 	}
 }
-	@media (max-width:1080px) { 
+
+@media (max-width:980px) { 
 .title{
 	width:70%;
 	margin:0 auto;
-	display:none;
 	h1{
-		width:200px;
-		height:80px;
-		font-size:50px;
+	width:176px;
+	margin-top:100px;
 	}
 }
 .haiku_btn{
@@ -144,19 +145,23 @@ img{
 		width:100%;
 	}
 }
+
 	.index{
 			height: 100vh;
 			width: 70%;
-			margin:100px auto;
+			margin:70px auto;
 			display:flex;
 			justify-content: center;
+			min-height:1200px;
+
 			.phrase_box{
 				width:100%;
 				height:62vh;
+				min-height:800px;
 				display: flex;
 				justify-content:space-between;
 				margin-left: -12px;
-				margin-top:277px;
+				margin-top:267px;
 				.phrease{
 				  -ms-writing-mode: tb-rl;
 				  writing-mode: vertical-rl;
@@ -173,33 +178,33 @@ img{
 
 			.row{
 				display:block;
-				width:70%;
+				width:72%;
 				margin:200px auto;
 				.description{
 					text-align:center;
 					h2{
-						font-size:50px;
+						font-size:60px;
 					}
 					p{
-						font-size:20px;
+						font-size:28px;
 					}
 				}
 			.form{
 				display:flex;
 				justify-content: start;
 				width:100%;
-				max-width:300px;
+				max-width:auto;
 				margin:0 auto;
 				
 				form{
-					width:418px;
+					width:100%;
 					margin: 100px auto;
 					input{
-						width:143%;
-						height:50px;
+						width:166%;
+						height:83px;
 					}
 					input,label{
-					margin-left: -130px;
+						font-size:28px;
 
 					}
 				}
@@ -207,7 +212,7 @@ img{
 margin-left:  0px;
 margin: 100px auto;
 border: solid 5px #1E1E1E;
-width:266px;
+width:100%;
 height:90px;
 line-height: 90px;
 display: flex;
@@ -216,7 +221,8 @@ color:#1E1E1E;
 text-align: center;
 font-size:46px;
 font-weight: 900;
-padding-left: 44px;
+padding-left: 100px;
+margin-left:33%;
 }
 			}
 		}
@@ -230,6 +236,13 @@ padding-left: 44px;
 			opacity:0.5;
 		}
 
+p{
+	font-size:28px;
+}
 
-
+}
+@media (min-width: 1150px) {
+	.container-fluid{
+		max-width:1150px;
+	}
 }
