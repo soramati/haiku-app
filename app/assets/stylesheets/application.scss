@@ -8,8 +8,11 @@ body{
 }
 .title{
 	margin-top:55px;
-	// border-bottom: solid 3px #1E1E1E;
 	width:143px;
+	h1{
+	border: solid 3px #1E1E1E;
+
+	}
 }
 h1{
 		margin-bottom: -6px;
@@ -113,38 +116,120 @@ img{
 		}
 	}
 }
-.haiku_btn_submit ::hover{
-			opacity:0.5;
-			}
-@media (max-width: 800px) {
-	.new{
-
-			width:100%;
-
-		.row{
-			margin:0 auto;
-			width:100%;
-			display:flex;
-			justify-content: center;
-		.form{
-			display:flex;
-			justify-content: start;
-			width:100%;
-			max-width:300px;
-			margin-left: -26px;
-			form{
-			}
-
-		}
+	@media (max-width:1080px) { 
+.title{
+	width:70%;
+	margin:0 auto;
+	display:none;
+	h1{
+		width:200px;
+		height:80px;
+		font-size:50px;
 	}
 }
-img{
-
-	position: absolute;
-	right: 50px;
-	top: 400px;
-	z-index: -1;
-	width:100px;
-	opacity:0.8;
+.haiku_btn{
+	margin-left:  0px;
+	margin:0 auto;
+	border: solid 5px #1E1E1E;
+	width:500px;
+	height:150px;
+	display: flex;
+	background-color: rgba(10, 10, 10, 0.0);
+	color:#1E1E1E;
+	text-align: center;
+	a{
+	font-size:80px;
+	font-weight: 900;
+	line-height: 150px;
+		width:100%;
+	}
 }
+	.index{
+			height: 100vh;
+			width: 70%;
+			margin:100px auto;
+			display:flex;
+			justify-content: center;
+			.phrase_box{
+				width:100%;
+				height:62vh;
+				display: flex;
+				justify-content:space-between;
+				margin-left: -12px;
+				margin-top:277px;
+				.phrease{
+				  -ms-writing-mode: tb-rl;
+				  writing-mode: vertical-rl;
+				  font-size: 100px;
+				  line-height: 30px;
+
+				}
+			}
+			
+		}
+
+		.new{
+				width:100%;
+
+			.row{
+				display:block;
+				width:70%;
+				margin:200px auto;
+				.description{
+					text-align:center;
+					h2{
+						font-size:50px;
+					}
+					p{
+						font-size:20px;
+					}
+				}
+			.form{
+				display:flex;
+				justify-content: start;
+				width:100%;
+				max-width:300px;
+				margin:0 auto;
+				
+				form{
+					width:418px;
+					margin: 100px auto;
+					input{
+						width:143%;
+						height:50px;
+					}
+					input,label{
+					margin-left: -130px;
+
+					}
+				}
+.haiku_btn_submit{
+margin-left:  0px;
+margin: 100px auto;
+border: solid 5px #1E1E1E;
+width:266px;
+height:90px;
+line-height: 90px;
+display: flex;
+background-color: rgba(10, 10, 10, 0.0);
+color:#1E1E1E;
+text-align: center;
+font-size:46px;
+font-weight: 900;
+padding-left: 44px;
+}
+			}
+		}
+	}
+		img{
+			position: absolute;
+			right: 50px;
+			top: 60vh;
+			z-index: -1;
+			width:300px;
+			opacity:0.5;
+		}
+
+
+
 }
