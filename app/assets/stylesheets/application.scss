@@ -141,11 +141,19 @@ img{
 @media (max-width:980px) { 
 .tweet_btn{
 position:fixed;
-top: 100px;
+top: 90%;
 right:40px;
-
 }
-
+.tweet-btn-share{
+  background-color: #1E1E1E;
+  border: 2px solid #1E1E1E;
+  border-radius: 0;
+  color: #fff;
+  padding:10px 42px;
+  font-size:30px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
 	.main_content{
 		margin-top:136px;
 	}
