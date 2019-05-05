@@ -1,17 +1,17 @@
 javascript:
 	$(function(){
-	    $(".phrase").css({opacity:'0'});
+	    $(".phrase_bg").css({opacity:'0'});
 	    setTimeout(function(){
-	        $(".phrase").stop().animate({opacity:'1'},100);
-	    },1000);
+	        $(".phrase_bg").stop().animate({opacity:'1'},500);
+	    },500);
 	});
 
 .index
 	.main_content
 		.phrase_box
-			p.phrase=@phrase5b.phrase 
-			p.phrase=@phrase7.phrase 
-			p.phrase =@phrase5_a.phrase 
+			p.phrease.phrase_bg=@phrase5b.phrase 
+			p.phrease.phrase_bg=@phrase7.phrase 
+			p.phrease.phrase_bg =@phrase5_a.phrase 
 		.haiku_btn= link_to'PUSH!', '#' 
 	=image_tag("rabbit.png")
 	
