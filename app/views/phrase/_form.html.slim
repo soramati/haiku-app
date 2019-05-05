@@ -1,11 +1,11 @@
 = form_with url:'/create/phrase',local: true do |f|
   .form-group
     = f.label :phrase5,'KAMINOKU'
-    = f.text_field :phrase5, class: 'form-control', id: 'phrase5'
+    = f.text_field :phrase5, class: 'form-control input_form', id: 'phrase5'
   .form-group
     = f.label :phrase7,'NAKANOKU'
-    = f.text_field :phrase7, class: 'form-control', id: 'phrase7'
+    = f.text_field :phrase7, class: 'form-control input_form', id: 'phrase7'
   .form-group
     = f.label :phrase5b,'SIMONOKU'
-    = f.text_field :phrase5b, class: 'form-control', id: 'phrase5b'
+    = f.text_field :phrase5b, class: 'form-control input_form', id: 'phrase5b'
   = f.submit 'PUSH!', class: 'haiku_btn_submit'

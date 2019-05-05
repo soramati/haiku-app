@@ -252,8 +252,8 @@ img{
 				form{
 					width:100%;
 					margin: 100px auto;
-					input{
-						width:185%;
+					.input_form{
+						width:764px;
 						height:90px;
 					}
 					input,label{
@@ -265,17 +265,20 @@ img{
 					margin-left:  0px;
 					margin: 100px auto;
 					border: solid 5px #1E1E1E;
-					width:100%;
+					width:auto;
 					height:100px;
 					line-height: 100px;
 					display: flex;
-					background-color: rgba(10, 10, 10, 0.0);
-					color:#1E1E1E;
+					background-color: #1E1E1E;
+					color:#fff;
 					text-align: center;
 					font-size:46px;
 					font-weight: 900;
 					padding: 0 51px ; 
-					margin-left:33%;
+				}
+				.haiku_btn_submit :hover{
+					background-color: #fff;
+					color:#1E1E1E;
 				}
 			}
 		}
