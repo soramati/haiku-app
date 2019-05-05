@@ -4,7 +4,7 @@
 			p.phrease=@phrase5b.phrase 
 			p.phrease=@phrase7.phrase 
 			p.phrease =@phrase5_a.phrase 
-		.haiku_btn.btn= link_to'PUSH!', '#' 
+		.haiku_btn= link_to'PUSH!', '#' 
 	=image_tag("rabbit.png")
 	
 
@@ -24,7 +24,7 @@
 
 javascript:
 		$(function() {
-		$('.btn').on('click', function() {
-		    $('.btn').prop('disabled', true);
+		$('.haiku_btn').on('click', function() {
+		    $('.haiku_btn').prop('disabled', true);
 		});
 		});
