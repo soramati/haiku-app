@@ -299,8 +299,9 @@ p{
 }
 
 }
-@media (min-width: 1150px) {
-	.container-fluid{
+@media (min-width: 1000px) {
+	.new{
 		max-width:1150px;
+		margin: 210px auto 0 auto;
 	}
 }
