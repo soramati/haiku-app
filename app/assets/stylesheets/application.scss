@@ -6,10 +6,21 @@ body{
     font-weight: 700;
     font-style: normal;
 }
-
-.tweet_btn :hover{
+.bg-haiku{
+	position:absolute;
+	top:0;
+	display: flex;
+}
+.header{
+	width:100%;
+}
+.nav-left{
+	margin-left:10px;
+}
+.tweet-btn-share:hover{
   background-color: #fff;
   color:#1E1E1E;
+  text-decoration: none;
 }
 .tweet-btn-share{
   background-color: #1E1E1E;
@@ -19,21 +30,16 @@ body{
   padding:4px 32px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  height:38px;
+  margin-top:20px;
+  margin-right: 50px;
 }
-.tweet_btn{
-	position:fixed;
-	top: 30px;
-	right:30px;
+.nav_right{
+	display:flex;
+	width:100%;
+	justify-content: flex-end;
 }
-.title{
-	margin-top:19px;
-	width:170px;
-	h1{
-		padding:10px 28px;
-		border: solid 3px #1E1E1E;
-		font-size:28px;
-	}
-}
+
 h1{
 		margin-bottom: -6px;
 }
@@ -137,11 +143,6 @@ img{
 }
 
 @media (max-width:980px) { 
-.tweet_btn{
-position:fixed;
-top: 90%;
-right:40px;
-}
 .tweet-btn-share{
   background-color: #1E1E1E;
   border: 2px solid #1E1E1E;
@@ -151,6 +152,7 @@ right:40px;
   font-size:30px;
   -webkit-transition: all .3s;
   transition: all .3s;
+  height:67px;
 }
 	.main_content{
 		margin-top:136px;
@@ -210,7 +212,9 @@ right:40px;
 		.new{
 				width:100%;
 			.row{
-				display:block;
+				display:flex;
+				flex-direction: colom;
+				align-items: centar;
 				width:72%;
 				margin:200px auto;
 				.description{
