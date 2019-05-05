@@ -147,6 +147,7 @@ img{
 	position:fixed;
 	top:auto;
 	bottom: 0;
+	right:0;
 }
 .tweet-btn-share{
   background-color: #1E1E1E;
@@ -242,8 +243,8 @@ img{
 					width:100%;
 					margin: 100px auto;
 					input{
-						width:166%;
-						height:83px;
+						width:185%;
+						height:90px;
 					}
 					input,label{
 						font-size:28px;
@@ -263,7 +264,7 @@ img{
 					text-align: center;
 					font-size:46px;
 					font-weight: 900;
-					padding-left: 130px;
+					padding-left: 152px;
 					margin-left:33%;
 				}
 			}
