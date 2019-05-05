@@ -14,16 +14,19 @@ html
     = csp_meta_tag
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
 
-  body
-  <nav class="header navbar-expand-lg navbar-light bg-haiku">
+  <body>
+  nav.header.navbar-expand-lg.navbar-light.bg-haiku
     .nav-left
       <a class="navbar-brand" href="#">HAIKU</a>
     .nav_right
       <a href="http://twitter.com/share?url=https://haiku-sora.herokuapp.com&text=コトバを集めてHAIKUを生成。　不思議な参加型俳句ジェネレータ。" class="tweet-btn-share" data-size="large"  data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </nav>
 
 .container-fluid-haiku
-      -if flash.notice.present?
-       .aler.alert-secondary= flash.notice
-      = yield
+    -if flash.notice.present?
+     .aler.alert-secondary= flash.notice
+    = yield
+ 
+
+

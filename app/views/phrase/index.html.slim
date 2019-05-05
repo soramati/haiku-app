@@ -4,7 +4,7 @@
 			p.phrease=@phrase5b.phrase 
 			p.phrease=@phrase7.phrase 
 			p.phrease =@phrase5_a.phrase 
-		.haiku_btn= link_to'PUSH!', '/' 
+		.haiku_btn.btn= link_to'PUSH!', '#' 
 	=image_tag("rabbit.png")
 	
 
@@ -20,3 +20,11 @@
 		.attention
 			p="ひらがな、カタカナ、漢字に対応しています。"
 			p="句読点は入れないでください。"
+
+
+javascript:
+		$(function() {
+		$('.btn').on('click', function() {
+		    $('.btn').prop('disabled', true);
+		});
+		});

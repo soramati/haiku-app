@@ -6,6 +6,14 @@ body{
     font-weight: 700;
     font-style: normal;
 }
+.btn-wrap {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.loading {
+    display: none;
+}
 .bg-haiku{
 	position:absolute;
 	top:0;
