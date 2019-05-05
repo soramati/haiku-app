@@ -56,7 +56,6 @@ h1{
 		font-family: kozuka-gothic-pro, sans-serif;
 		font-weight: 900;
 		font-style: normal;
-
 	}
 .haiku_btn{
 		margin:0 auto;
@@ -82,11 +81,10 @@ h1{
 	font-size:14px;
 }
 .description{
-
-p{
-	font-size:15px;
-	line-height: 9px;
-}
+	p{
+		font-size:15px;
+		line-height: 9px;
+	}
 }
 img{
 
@@ -239,6 +237,7 @@ img{
 						font-size:74px;
 					}
 					p{
+						display: none;
 						font-size:28px;
 					}
 				}
@@ -286,14 +285,14 @@ img{
 			}
 		}
 	}
-		img{
-			position: absolute;
-			right: 50px;
-			top: 60vh;
-			z-index: -1;
-			width:300px;
-			opacity:0.5;
-		}
+img{
+	position: absolute;
+	right: 50px;
+	top: 60vh;
+	z-index: -1;
+	width:300px;
+	opacity:0.5;
+}
 
 p{
 	font-size:28px;
