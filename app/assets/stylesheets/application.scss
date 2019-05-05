@@ -231,12 +231,12 @@ img{
 				display:flex;
 				flex-direction: colom;
 				align-items: centar;
-				width:72%;
+				width:82%;
 				margin:200px auto;
 				.description{
 					text-align:center;
 					h2{
-						font-size:60px;
+						font-size:74px;
 					}
 					p{
 						font-size:28px;
@@ -253,12 +253,15 @@ img{
 					width:100%;
 					margin: 100px auto;
 					.input_form{
-						width:764px;
+						width:749px;
 						height:90px;
 					}
 					input,label{
 						font-size:28px;
 
+					}label{
+
+						padding-top:10px;
 					}
 				}
 				.haiku_btn_submit{
