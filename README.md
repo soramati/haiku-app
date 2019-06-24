@@ -1,25 +1,18 @@
-# README
+README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This README would normally document whatever steps are necessary to get the application up and running.
 
-Things you may want to cover:
+gif -> https://raw.github.com/wiki/soramati/products/images/m56vv-dki5f.gif
 
-* Ruby version
+HAIKU/コトバを集めて、HAIKUを生み出す不思議なジェネレーター
 
-* System dependencies
+初めて制作したオリジナルアプリ「HAIKU」です。ランダムな俳句を生成します。ユーザーが言葉を覚えさせていく仕様になっています。フレームワークはRuby on Rails、画像生成にはRmagic、サーバーはHerokuを使用しています。
 
-* Configuration
+Dependency
+Ruby 2.5.1 Ruby on Rails 5.2.1 
 
-* Database creation
+References
+    Railsドキュメント http://railsdoc.com/references/rails
+    Rails Girls ガイド  http://railsgirls.jp/
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# haiku-app
+haiku-app
